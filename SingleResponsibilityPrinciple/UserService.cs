@@ -13,7 +13,7 @@ namespace SingleResponsibilityPrinciple
             var emailService = new EmailService();
             if (!emailService.ValidateEmail(email))
             {
-                throw new ValidationException("Email not found");
+                throw new ValidationException("Email not found!!");
             }
             var user = new User(email, password);
         }
